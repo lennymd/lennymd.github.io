@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Calendas Plus';
+  src: url('/assets/fonts/Calendas-Plus/Calendas-Plus-Complete-Webfont/Calendas-Plus-Regular-Webfont/calendas_plus-webfont.eot');
+  src: url('/assets/fonts/Calendas-Plus/Calendas-Plus-Complete-Webfont/Calendas-Plus-Regular-Webfont/calendas_plus-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/Calendas-Plus/Calendas-Plus-Complete-Webfont/Calendas-Plus-Regular-Webfont/calendas_plus-webfont.woff2')
+      format('woff2'),
+    url('/assets/fonts/Calendas-Plus/Calendas-Plus-Complete-Webfont/Calendas-Plus-Regular-Webfont/calendas_plus-webfont.woff')
+      format('woff'),
+    url('/assets/fonts/Calendas-Plus/Calendas-Plus-Complete-Webfont/Calendas-Plus-Regular-Webfont/calendas_plus-webfont.ttf')
+      format('truetype'),
+    url('/assets/fonts/Calendas-Plus/Calendas-Plus-Complete-Webfont/Calendas-Plus-Regular-Webfont/calendas_plus-webfont.svg#calendas_plusregular')
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calendas Plus';
+  src: url('calendas_plus-webfont.eot');
+  src: url('calendas_plus-webfont.eot?#iefix') format('embedded-opentype'),
+    url('calendas_plus-webfont.woff2') format('woff2'),
+    url('calendas_plus-webfont.woff') format('woff'),
+    url('calendas_plus-webfont.ttf') format('truetype'),
+    url('calendas_plus-webfont.svg#calendas_plusregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,7 +1,7 @@
 :root {
   /* sizing & spacing */
-  --unit-line-height: 1.5em;
-  --unit-size: 32px;
+  --unit-line-height: 1.25em;
+  --unit-size: 28px;
 
   /* color */
   --color-bg: #a8a29e;
@@ -19,11 +19,11 @@ html {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-size: var(--unit-size);
-  line-height: 1.4;
-
-  font-family: 'Calendas Plus', serif;
-  font-weight: 400;
+  line-height: calc(var(--unit-line-height));
+  font-family: 'Calendas Plus', sans-serif;
+  font-weight: normal;
 }
+
 body {
   margin: 3%;
   max-width: 40rem;

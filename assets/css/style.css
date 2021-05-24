@@ -1,93 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 
 :root {
-  --background: #f9f7ea;
-  --text-color: #151b2e;
-  --secondary-color: #556b2f;
+  /* sizing & spacing */
+  --unit-line-height: 1.5em;
+
+  /* color */
+  --color-bg: #a8a29e;
+  --color-text: #121212;
+  --color-secondary: #679581;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  background-color: var(--background);
-  color: var(--text-color);
-  font-size: 21px;
-  line-height: 1.7;
-  font-family: 'IBM Plex Serif', serif;
-  font-weight: 400;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 24px;
+  line-height: calc(var(--unit-line-height));
+  font-family: 'Calendas Plus', serif;
+  font-weight: normal;
 }
+
 body {
-  margin: 3%;
-  max-width: 40rem;
+  margin: 0 calc(var(--unit-line-height));
+  /* max-width: 40rem; */
+  font-size: clamp(18px, 2vw, 25px);
 }
 
-strong {
-  font-weight: 600;
+hr {
+  margin: 0 calc(-1 * var(--unit-line-height));
+  /* margin-right: calc(-1 * var(--unit-line-height)); */
+  height: 2px;
+  border: 0;
+  background-color: var(--color-text);
+  opacity: 0.75;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-}
-
-header,
-section {
-  margin-bottom: 2rem;
+header {
+  padding-top: 1rem;
+  margin-bottom: 3rem;
 }
 
-section p {
+p.header-about {
+  max-width: 600px;
   margin-bottom: 1rem;
 }
-section p:last-child {
-  margin-bottom: 0;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
+
+.header-nav {
+  /* display: flex;
+  flex-direction: column; */
+  font-size: 16px;
 }
 
-nav a {
-  margin-left: 20px;
-  font-style: italic;
-  font-weight: 400;
-  color: var(--text-color);
-  text-decoration: none;
-}
-nav a:hover,
-nav a:active {
-  text-decoration: underline;
-  color: var(--secondary-color);
-}
-nav a:first-child {
-  margin-left: 0;
-}
-
-.title {
+a {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
+  /* font-size: 16px; */
+  color: var(--color-text);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.short_intro {
-  text-align: left;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
-  max-width: 90%;
-}
-
-.project_list {
-  list-style: inside;
-  margin-left: 1rem;
+a:hover {
+  color: white;
 }
